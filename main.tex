@@ -1,0 +1,284 @@
+% Comandos para crear la portada y la primera página del PFG
+%% Título del PFG
+\newcommand{\PFGtitulo}{Planificación eficiente de infraestructuras virtuales basadas en docker y kubernetes para el streaming de vídeo}
+%% Autor/a y directores/as del PFG
+\newcommand{\PFGautor}{Ángel Roberto García Serpa}
+\newcommand{\PFGdirector}{Agustín Carlos Caminero Herráez}
+%% Descomentar la siguiente línea si hay codirector/a en el PFG
+%\newcommand{\PFGcodirector}{Codirector/a del PFG}
+%% Grado. A elegir entre:
+%% Ingeniería Informática
+%% Ingeniería en Tecnologías de la Información
+\newcommand{\PFGgrado}{Ingeniería Informática}
+%% Modalidad. A elegir entre:
+%% genérica
+%% específica
+\newcommand{\PFGmodalidad}{genérica}
+%% Curso académico en formato 20xx/20xx+1. Por ejemplo 2022/2023
+\newcommand{\PFGcursoacademico}{2022/2023}
+%% Convocatoria. A elegir entre:
+%% junio
+%% septiembre
+%% diciembre
+\newcommand{\PFGconvocatoria}{junio}
+%% Fecha de lectura (si no se sabe el día concreto, poner mes y año}
+\newcommand{\PFGfechadefensa}{Fecha de lectura}
+
+
+\documentclass[12pt]{book}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[papersize={210mm,297mm},tmargin=25mm,bmargin=25mm,lmargin=20mm,rmargin=20mm]{geometry}
+
+% no indentar los párrafos
+\setlength\parindent{0cm}
+\setlength\parskip{1em}
+
+%Para tener los elementos de texto en español
+\usepackage[spanish]{babel}
+%Hipervinculos para todo lo útil
+%\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{links}{rgb}{0.35, 0.4, 0.35}
+\definecolor{urls}{rgb}{0,0,1}
+\definecolor{cites}{rgb}{0.8,0,0}
+
+\usepackage{hyperref}
+%\usepackage[all]{hypcap}
+\hypersetup{
+	colorlinks = true,
+	linkcolor = links,
+	urlcolor = urls,
+	citecolor = cites
+}
+
+\usepackage{fancyhdr}
+
+%añadir ficheros externos
+\usepackage{subfiles}
+%soporte para anexos
+\usepackage{appendix}
+%paquetes para figuras
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+
+%Encabezados bonitos
+\pagestyle{headings}
+
+%paquete para poner la bibliografia en la table of contents
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
+%Cambiamos el espacio en blanco enorme que por defecto hay en las páginas inicio de capítulo
+\usepackage{titlesec}
+\titleformat{\chapter}[display]   
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+%para crear subsubsubsection
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%Ruta en la que pondremos las imágenes para el documento
+\graphicspath{ {imagenes/} }
+%Redifinimos el nombre que asigna babel spanish a las tablas (cuadro) a tabla
+\renewcommand{\spanishtablename}{Tabla}
+\renewcommand{\spanishlisttablename}{Índice de tablas}
+\renewcommand{\spanishcontentsname}{Índice}
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+% Definimos el comando de página en blanco
+\newcommand\paginablanco{%
+    \null
+    \thispagestyle{empty}%
+    \newpage}
+
+% Definimos el comando de página en blanco sin avanzar numeracion
+\newcommand\paginablancosin{%
+    \paginablanco{}
+    \addtocounter{page}{-1}}
+
+%mayor anchura en las tablas
+\renewcommand{\arraystretch}{1.5}
+%mayor ancuhura en las fracciones
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+%comando escribir TFG
+\newcommand{\tfg}{Trabajo Fin de Grado }
+%definimos estilo consola
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{terminalbgcolor}{HTML}{330033}
+\definecolor{terminalrulecolor}{HTML}{000099}
+\newcommand{\lstconsolestyle}{
+	\lstset{
+		backgroundcolor=\color{terminalbgcolor},
+		basicstyle=\color{white}\fontfamily{fvm}\footnotesize\selectfont,
+		breakatwhitespace=false,  
+		breaklines=true,
+		captionpos=b,
+		commentstyle=\color{mygreen},
+		deletekeywords={...},
+		escapeinside={\%*}{*)},
+		extendedchars=true,
+		frame=single,
+		keepspaces=true,
+		keywordstyle=\color{blue},
+		%language=none,
+		morekeywords={*,...},
+		numbers=none,
+		numbersep=5pt,
+		framerule=2pt,
+		numberstyle=\color{mygray}\tiny\selectfont,
+		rulecolor=\color{terminalrulecolor},
+		showspaces=false,
+		showstringspaces=false,
+		showtabs=false,
+		stepnumber=2,
+		stringstyle=\color{mymauve},
+		tabsize=2
+	}
+}
+
+
+% Comenzamos el documento
+\begin{document}
+\pagenumbering{gobble} % para no incluir números en la portada y primera página
+
+% Hacemos la portada
+\begin{titlepage}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics{rosadelosvientos.png}
+\end{figure}
+
+\begin{center}
+    {\scshape\Large Universidad Nacional de Educación a Distancia \par}
+    {\scshape\Large Escuela Técnica Superior de Ingeniería Informática \par}
+    \vfill
+    \large{Proyecto de fin de Grado en \PFGgrado}\\
+    \vfill
+    {\bfseries\Huge \textcolor{black}{\PFGtitulo} \par}
+    \vfill
+\end{center}
+
+\vspace*{3cm}
+{\huge \textcolor{black}{\PFGautor} \par}
+{\huge \textcolor{black}{Dirigido por: \PFGdirector} \par}
+\ifdefined\PFGcodirector
+  \huge \textcolor{black}{Codirigido por: \PFGcodirector} \par
+\fi
+{\huge \textcolor{black}{Curso \PFGcursoacademico, convocatoria \PFGconvocatoria} \par}
+
+\chapter*{}
+
+\thispagestyle{empty}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics{rosadelosvientos.png}
+\end{figure}
+
+\begin{center}
+
+    {\bfseries\Huge \textcolor{black}{\PFGtitulo} \par}
+    \vfill
+    {\bfseries\Large \textcolor{black}{Proyecto de fin de Grado en \PFGgrado} \par}
+    {\bfseries\Large \textcolor{black}{de modalidad \PFGmodalidad} \par}
+\end{center}
+
+\vspace*{5cm}
+{\Large Realizado por: \PFGautor \par}
+{\Large Dirigido por: \PFGdirector \par}
+\ifdefined\PFGcodirector
+  {\Large Codirigido por: \PFGcodirector \par}
+\fi%
+
+%%{\Large Codirigido por: \PFGcodirector \par}
+\vfill
+{\Large Fecha de lectura y defensa: \PFGfechadefensa \par}
+
+\end{titlepage}
+
+\pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
+
+% Agradecimientos
+\chapter*{Agradecimientos}
+\thispagestyle{empty}
+\begin{flushright}
+\textit{Incluir todos los agradecimientos}
+\end{flushright}
+
+\chapter*{Resumen} % El * indica que no queremos que añada la palabra "Capitulo"
+
+Se pretende realizar despliegue y evaluación de diversas tecnologías de servidores de streaming de video sobre contenedores ligeros. Para la consecución del objetivo principal, se deberán realizar los siguientes:
+\begin{list}{·}{}
+	\item Creación de las infraestructuras paralelas distribuidas.
+	\item Recopilación de información sobre servidores de streaming de video.
+	\item Puesta en marcha y evaluación de prestaciones de los servidores de vídeo seleccionados.
+	\item Generación de documentación para el despliegue de los servidores utilizados tanto en local como en la nube.
+\end{list}
+
+\chapter*{Abstract} % El * indica que no queremos que añada la palabra "Capitulo"
+
+Resúmen del PFG en inglés.
+
+\chapter*{Palabras clave} % El * indica que no queremos que añada la palabra "Capitulo"
+
+video, distribuido, Kubernetes 
+
+\chapter*{Keywords} % El * indica que no queremos que añada la palabra "Capitulo"
+
+video, distributed, Kubernetes
+
+\tableofcontents %% Índice general
+\listoftables    %% Índice de tablas
+\addcontentsline{toc}{section}{Índice de tablas} % Queremos que aparezca en el índice
+\listoffigures   %% Índice de figuras
+\addcontentsline{toc}{section}{Índice de figuras} % Queremos que aparezca en el índice
+\newpage
+
+\paginablanco{}
+
+%% Comenzamos con la numeración arábica porque aquí empieza el contenido
+\pagenumbering{arabic}
+
+%% Ejemplo de importación de capítulos
+\chapter{Introducción}
+\subfile{capitulos/C1-introduccion}
+
+\chapter{Estado del arte}
+\subfile{capitulos/C2-estado_arte}
+\chapter{Propuesta}
+\subfile{capitulos/C3-propuesta}
+\chapter{Diseño}
+\subfile{capitulos/C4-disenno}
+\chapter{Desarrollo del proyecto}
+\subfile{capitulos/C5-desarrollo}
+\chapter{Pruebas}
+\subfile{capitulos/C6-pruebas}
+\chapter{Conclusiones}
+\subfile{capitulos/C7-conclusiones}
+
+%% Bibliografía
+\newpage
+\subfile{capitulos/referencias}
+
+\clearpage
+
+\appendix
+\chapter{Primer anexo}
+\subfile{capitulos/A1-anexo}
+
+\chapter{Segundo anexo}
+\subfile{capitulos/A2-anexo}
+
+%...
+
+\end{document}
