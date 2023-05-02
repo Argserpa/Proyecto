@@ -29,11 +29,13 @@ G.~Sayfan, \emph{Compiladores: Principios, técnicas y herramientas}.\hskip 1em
 J.~M. Díaz~Martínez, \emph{Fundamentos básicos de los sistemas
   operativos}.\hskip 1em plus 0.5em minus 0.4em\relax Sanz y Torres S.L., 2011.
 
-\bibitem{Giridharaprasad2020}
-\BIBentryALTinterwordspacing
-Giridharaprasad. (2020, January) Setup kubernetes cluster using kubeadm in
-  vsphere virtual machines. [Online]. Available:
-  \url{https://gprasath.medium.com/setup-kubernetes-cluster-using-kubeadm-in-vsphere-virtual-machines-985372ee5b97}
-\BIBentrySTDinterwordspacing
+\bibitem{Ansible2023}
+A.~project Contributors. (2023, 03) Installing ansible.
+
+\bibitem{Kubernetes2017}
+T.~K. Authors. (2017) Installing kubernetes.
+
+\bibitem{Docker2023}
+D.~Inc. (2017) Install docker engine.
 
 \end{thebibliography}

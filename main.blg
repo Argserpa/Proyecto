@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: IEEEtran.bst
@@ -12,50 +12,56 @@ Repeated entry---line 18 of file capitulos/bibliografia.bib
  : @book{Sayfan2018
  :                 ,
 I'm skipping whatever remains of this entry
+Warning--string name "https://docs.ansible.com/" is undefined
+--line 28 of file capitulos/bibliografia.bib
+Warning--string name "https://pwittrock.github.io/docs/home/" is undefined
+--line 36 of file capitulos/bibliografia.bib
+Warning--string name "https://pwittrock.github.io/docs/home/" is undefined
+--line 43 of file capitulos/bibliografia.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 3 entries,
+You've used 5 entries,
             4087 wiz_defined-function locations,
-            840 strings with 7760 characters,
-and the built_in function-call counts, 1122 in all, are:
-= -- 71
-> -- 12
+            848 strings with 7724 characters,
+and the built_in function-call counts, 1701 in all, are:
+= -- 109
+> -- 20
 < -- 0
-+ -- 6
-- -- 3
-* -- 48
-:= -- 212
-add.period$ -- 6
-call.type$ -- 3
-change.case$ -- 1
++ -- 10
+- -- 5
+* -- 51
+:= -- 304
+add.period$ -- 10
+call.type$ -- 5
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 82
-empty$ -- 128
-format.name$ -- 3
-if$ -- 239
+cite$ -- 5
+duplicate$ -- 136
+empty$ -- 196
+format.name$ -- 5
+if$ -- 373
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 17
-newline$ -- 34
-num.names$ -- 3
-pop$ -- 52
+int.to.str$ -- 5
+missing$ -- 31
+newline$ -- 38
+num.names$ -- 5
+pop$ -- 93
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 88
+skip$ -- 141
 stack$ -- 0
 substring$ -- 0
-swap$ -- 44
+swap$ -- 75
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
+type$ -- 5
 warning$ -- 0
-while$ -- 3
-width$ -- 4
-write$ -- 46
+while$ -- 5
+width$ -- 6
+write$ -- 57
 (There was 1 error message)

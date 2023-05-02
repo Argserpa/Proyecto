@@ -109,16 +109,19 @@
 \newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
 %comando escribir TFG
 \newcommand{\tfg}{Trabajo Fin de Grado }
+%estilo de fuente para la consola
+\usepackage{ascii}
+\usepackage[T1]{fontenc}
 %definimos estilo consola
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
-\definecolor{terminalbgcolor}{HTML}{330033}
+\definecolor{terminalbgcolor}{HTML}{000000}
 \definecolor{terminalrulecolor}{HTML}{000099}
 \newcommand{\lstconsolestyle}{
 	\lstset{
 		backgroundcolor=\color{terminalbgcolor},
-		basicstyle=\color{white}\fontfamily{fvm}\footnotesize\selectfont,
+		basicstyle=\color{white}\asciifamily\footnotesize\selectfont,
 		breakatwhitespace=false,  
 		breaklines=true,
 		captionpos=b,
@@ -273,10 +276,10 @@ video, distributed, Kubernetes
 \clearpage
 
 \appendix
-\chapter{Primer anexo}
+\chapter{}
 \subfile{capitulos/A1-anexo}
 
-\chapter{Segundo anexo}
+\chapter{}
 \subfile{capitulos/A2-anexo}
 
 %...
