@@ -4,8 +4,18 @@
 \section*{Instalaciones y Configuraciones}
 \section{VirtualBox}
 \subsection{instalación}
+
 \subsection{Guest Additions}
 https://www.makeuseof.com/tag/virtualbox-guest-additions-what-they-are-and-how-to-install-them/
+
+\subsection{configuración de la red de los equipos:}
+se crea una conexión de tipo \textit{bridge }y se le da una IP fija a cada equipo, de esta manera las VM tienen conexión a Internet y una red dedicada.
+\begin{list}{·}{}
+	\item mint00 192.168.1.100
+	\item mint01 192.168.1.101
+	\item mint02 192.168.1.102
+	\item mint03 192.168.1.103
+\end{list}
 \section{Instalación de Ansible and sshpass}
 Installing Ansible and sshpass. checking ansible version
 %formato de consola
@@ -230,37 +240,27 @@ sudo apt-get install ansible-core
 \end{lstlisting}
 
 
-\section{Creación del cluster}
-instalamos el master en mint00 y los ottros 3 serán slaves del mase
-
-\subsection{configuración de la red de los equipos:}
-se crea una conexión de tipo \textit{bridge }y se le da una IP fija a cada equipo, de esta manera las VM tienen conexión a Internet y una red dedicada.
-\begin{list}{·}{}
-	\item mint00 192.168.1.100
-	\item mint01 192.168.1.101
-	\item mint02 192.168.1.102
-	\item mint03 192.168.1.103
-\end{list}
-
+\section{Instalación de de kubeadm}
+Para poder utilizar docker necesitamos instalar varios paquetes. Estos son Docker Engine, kubectl, kubelet y kubeadm. Pasamos a instalar cada uno individualmente. 
 
 \subsection{instalación kubectl}
-se descarga la última release:
+Hay que descargarse la última release:
 
 \begin{lstlisting}
  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 \end{lstlisting}
-hacemos que el archivo sea ejecutable
 
+Para que el archivo sea ejecutable utilizamos chmod.
 \begin{lstlisting}
 chmod +x kubectl
 \end{lstlisting}
-movemos el binario al path del usuario para ejecutarlo directamente desde la consola.
+se mueve el archivo binario al path del usuario para ejecutarlo directamente desde la consola.
 
 \begin{lstlisting}
 sudo mv kubectl /usr/local/bin/kubectl
 \end{lstlisting}
  
- probamos que se ha instalado ejecutando el comando, comprobando que muestra su ayuda
+Se comprueba que la instalación ha sido correcta mediante el comando kubectl. Debe devolver la ayuda del mismo.
 
 \begin{lstlisting}     
  tfg@mint01:~$ kubectl 
@@ -342,13 +342,13 @@ sudo mv kubectl /usr/local/bin/kubectl
  commands).
  \end{lstlisting}
  
- podemos ejecutar los 4 comandos a la vez:
+Se pueden ejecutar los 4 comando a la vez mediante la instrucción:
 \begin{lstlisting} 
   curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl &&  chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl && kubectl
 \end{lstlisting}
 \subsection{Instalación de docker Engine}
-\subsubsection{Configuración del repositorio} 
-actualizamos el paquete apt e instalamos certificados necesarios
+\subsubsection{Configuración del repositorio}
+Primero, se actualiza el paquete apt y se instalan los certificados necesarios
 \begin{lstlisting} 
 sudo apt-get update
 sudo apt-get install \
@@ -357,14 +357,14 @@ curl \
 gnupg
 \end{lstlisting} 
 
-Añadimos la GPG key oficial de docker
+Se debe añadir la GPG key oficial de docker a los keyrings.
 \begin{lstlisting}
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 \end{lstlisting}
 
-configuramos el repositorio para descarga y configuración de docker
+Se añade el repositorio para la descarga y configuración de docker al archivo de configuración de repositorios para docker.
 \begin{lstlisting}
 echo \
 "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
@@ -372,11 +372,11 @@ echo \
 sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
 \end{lstlisting}
 
-ejecutamos un update para instalar docker.
+Una vez configurado el repositorio, se ejecuta del comando apt-get update.
 \begin{lstlisting}
 sudo apt-get update
 \end{lstlisting}
-En este punto puede ser que de un error al no existir versión de Docker para nuestra distribución de Linux.
+En este punto puede ser que haya un error al no existir una versión de Docker para la distribución de linux sobre la que estamos trabajando.
 
 \begin{lstlisting}
 sudo apt-get update 
@@ -397,16 +397,14 @@ N: Updating from such a repository can't be done securely, and is therefore disa
 N: See apt-secure(8) manpage for repository creation and user configuration details.
 \end{lstlisting}
 
-De darse el caso , editamos el archivo \textit{/etc/apt/sources.list.d/docker.list} con la versión de docker disponible más parecida a la que estamos ejecutando. Para ello revisamos en \textit{https://download.docker.com/linux/ubuntu/dists/} las distribuciones para las que docker tiene releases y elegimos la nuestra. Para saber qué distribución es la de nuestro SO, se revisa el archivo \textit{/etc/os-release} y se elige el \textit{VERSION\_CODENAME} o el 
- \textit{UBUNTU\_CODENAME}
-
-\subsubsection{Instalación de Docker Engine} 
-una vez configurado todo, instalamos Docker engine
-
+De darse el caso, se debe editar el archivo \textit{/etc/apt/sources.list.d/docker.list} con la versión de docker disponible más cercana a la que está en ejecución. Para ello hay que buscar en \textit{https://download.docker.com/linux/ubuntu/dists/} las distribuciones para las que docker tiene releases y se elige la que más convenga. Para saber qué distribución es la del SO en uso, se revisa el archivo \textit{/etc/os-release} y se elige el \textit{VERSION\_CODENAME} o el 
+ \textit{UBUNTU\_CODENAME}.
+ 
+Finalmente se instalan los paquetes necesarios para que docker funcione correctamente:
 \begin{lstlisting}
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin 
 \end{lstlisting}
-y verificamos que está correctamente instalado ejecutando un hello world docker style.
+Se puede verificar la correcta instalción ejecutando un \textit{hello world} docker style.
 \begin{lstlisting} 
 sudo docker run hello-world
 Unable to find image 'hello-world:latest' locally
@@ -435,8 +433,27 @@ https://hub.docker.com/
 
 For more examples and ideas, visit:
 https://docs.docker.com/get-started/
-
 \end{lstlisting}
+
+\subsubsection{Instalación de kubelet y kubeadm} 
+El último paso antes de empezar a crear el clúster es instalar kubelet y kubeadm, para ello se ejecutan los siguientes comandos en la terminal \textbf{con un usuario con permisos de root}. 
+\begin{lstlisting} 
+apt-get update && apt-get install -y apt-transport-https
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+
+apt-get update
+
+apt-get install -y kubelet kubeadm
+\end{lstlisting}
+
+
+\section{Creación del cluster}
+instalamos el master en mint00 y los ottros 3 serán slaves del mase
 
 \begin{lstlisting} 
 \end{lstlisting}
