@@ -23,5 +23,5 @@
 \contentsline {subsubsection}{\numberline {B.3.2.1}Configuración del repositorio}{26}{subsubsection.Alph2.3.2.1}%
 \contentsline {subsubsection}{\numberline {B.3.2.2}Instalación de kubelet y kubeadm}{28}{subsubsection.Alph2.3.2.2}%
 \contentsline {section}{\numberline {B.4}Creación del cluster}{28}{section.Alph2.4}%
-\contentsline {section}{\numberline {B.5}Instalar programas de obs}{28}{section.Alph2.5}%
-\contentsline {subsection}{\numberline {B.5.1}install obs studio}{28}{subsection.Alph2.5.1}%
+\contentsline {section}{\numberline {B.5}Instalar programas de obs}{32}{section.Alph2.5}%
+\contentsline {subsection}{\numberline {B.5.1}install obs studio}{32}{subsection.Alph2.5.1}%

@@ -453,10 +453,127 @@ apt-get install -y kubelet kubeadm
 
 
 \section{Creación del cluster}
-instalamos el master en mint00 y los ottros 3 serán slaves del mase
+El master va a ser el mint00. Accedemos a MV y ejecutamos la siguiente instrucción donde la IP configurada como \textit{apiserver-advertise-address} es la del adaptador que hace de bridge (Ver dirección MAC) en \ref{adaptador1} y \ref{adaptadorconfig} y la que queda como \textit{--pod-network-cidr} es la NAT. \ref{adaptador2}
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.5]{00.png}
+	\caption{Configuración Adaptador 1.}
+	\label{adaptador1}
+\end{figure} 
+\begin{figure}[!h]
+	\includegraphics[scale=0.5]{01.png}
+	\caption{Configuración Adaptador 2.}
+	\label{adaptador2}
+\end{figure} 
+\begin{figure}[!h]
+	\includegraphics[scale=0.5]{02.png}
+	\caption{Direcciones de los adaptadores en la Máquina Virtual.}
+	\label{adaptadorconfig}
+\end{figure} 
+
 
 \begin{lstlisting} 
+	sudo kubeadm init --apiserver-advertise-address 192.168.1.100 --pod-network-cidr=10.0.3.15
 \end{lstlisting}
+En este momento puede surgir un error. 
+\begin{lstlisting}
+	sudo kubeadm init --apiserver-advertise-address 192.168.1.100 --pod-network-cidr=10.0.3.15
+	[sudo] password for tfg:
+	[init] Using Kubernetes version: v1.27.1
+	[preflight] Running pre-flight checks
+	[WARNING Swap]: swap is enabled; production deployments should disable swap unless testing the NodeSwap feature gate of the kubelet
+	error execution phase preflight: [preflight] Some fatal errors occurred:
+	[ERROR CRI]: container runtime is not running: output: time="2023-05-06T17:35:28+02:00" level=fatal msg="validate service connection: CRI v1 runtime API is not implemented for endpoint \"unix:///var/run/containerd/containerd.sock\": rpc error: code = Unimplemented desc = unknown service runtime.v1.RuntimeService"
+	, error: exit status 1
+	[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+	To see the stack trace of this error execute with --v=5 or higher	
+\end{lstlisting}
+Esto es un error del paquete containerd que se puede resolver de la siguiente manera:
+como usuario root, se elimina el paquete containerd, se actualiza e instala de nuevo el paquete, se elimina la configuración por defecto y se reinicia el programa.
+
+\begin{lstlisting}
+	apt remove containerd 
+	apt update && apt install containerd.io 
+	rm /etc/containerd/config.toml 
+	systemctl restart containerd 
+\end{lstlisting}
+
+Una vez resuelto este inconveniente podemos iniciar el master. Para ello, usamos el comando y esperamos a que arranque satisfactoriamente. A continuación vemos algunas de las líneas de salida de la ejecución.
+
+\begin{lstlisting}
+	 sudo kubeadm init --apiserver-advertise-address 192.168.1.100 --pod-network-cidr=10.0.3.15
+	 [init] Using Kubernetes version: v1.27.1
+	 [preflight] Running pre-flight checks
+	 [preflight] Pulling images required for setting up a Kubernetes cluster
+	 [preflight] This might take a minute or two, depending on the speed of your internet connection
+	 
+	 [certs] apiserver serving cert is signed for DNS names [kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local mint00] and IPs [10.96.0.1 192.168.1.100]
+	 [apiclient] All control plane components are healthy after 4.001839 seconds
+	 	 
+	 Your Kubernetes control-plane has initialized successfully!
+	 
+	 To start using your cluster, you need to run the following as a regular user:
+	 
+	 mkdir -p $HOME/.kube
+	 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+	 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+	 
+	 Alternatively, if you are the root user, you can run:
+	 
+	 export KUBECONFIG=/etc/kubernetes/admin.conf
+	 
+	 You should now deploy a pod network to the cluster.
+	 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+	 https://kubernetes.io/docs/concepts/cluster-administration/addons/
+	 
+	 Then you can join any number of worker nodes by running the following on each as root:
+	 
+	 kubeadm join 192.168.1.100:6443 --token k79hza.63kxu2jlx6f6qzdb \
+	 --discovery-token-ca-cert-hash sha256:83c9ec0ea6a42546598b01fa1a54f52f2bcdb2109395f3605772740922d788a0
+\end{lstlisting}
+Además muestra el comando a ejecutar para unir otros nodos a la red.
+Antes de añadir los demás pods se deben ejecutar los siguientes comando sólo en el nodo master para guardar la configuración:
+\begin{lstlisting}
+	mkdir -p $HOME/.kube && sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config && sudo chown $(id -u):$(id -g) $HOME/.kube/config
+\end{lstlisting}
+
+Puede ser que al intentar agregar los demás nodos muestre el error del paquete CRI como en el nodo master. Se resuelve de la misma manera. Deshabilitamos la memoria swap para que no muestre el warning y ejecutamos el comando.
+\begin{lstlisting}
+	sudo swapoff -a	 
+	sudo kubeadm join 192.168.1.100:6443 --token k79hza.63kxu2jlx6f6qzdb \
+	--discovery-token-ca-cert-hash sha256:83c9ec0ea6a42546598b01fa1a54f52f2bcdb2109395f3605772740922d788a0
+\end{lstlisting}
+Para comprobar que se han creado correctamente, se ejecuta el comando:
+\begin{lstlisting}
+	kubectl get nodes
+\end{lstlisting}
+Hace falta un paso extra que se ha realizado en este punto de la configuración. Se va a trabajar con fannel para configurar la red. Para ello es necesario descargarse la configuración escribiendo:
+\begin{lstlisting}
+	wget https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml	
+\end{lstlisting}
+Una vez descargado, se debe modificar el archivo \ref{flannel}, añadiendo a la sección \textit{flanneld}, la interfaz correspondiente, en este caso se añade la línea \textit{- --iface=enp0s3} \ref{adaptadorconfig} con el identificador del adaptador configurado como bridge.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.5]{03.png}
+	\caption{kube-flannel.yml.}
+	\label{flannel}
+\end{figure} 
+Una vez realizada toda la configuración correctamente, se observan los nodos agregados al cluster.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.5]{04.png}
+	\caption{Ejecución del comando get nodes.}
+	\label{getNodes}
+\end{figure} 
+Se puede configurar 
+
+\begin{lstlisting}
+\end{lstlisting}
+
+\begin{lstlisting}
+\end{lstlisting}
+
+
 \section{Instalar programas de obs}
 \subsection{install obs studio}
 \begin{lstlisting}
