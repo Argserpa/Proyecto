@@ -13,10 +13,21 @@ Se seguira el libro Mastering kubernetes (ToDo ) en su cuarta edicion. Para la c
 \end{itemize}
 
 Se instala pass, necesario para guardar credenciales que se pasan via docker login y nerdctl login.
-Una vez instalado Rancher es recomendable generar una GPG key para securizar los secrets. para ello hacmoes lo siguiente:
 
-Se instala docker desktop siguiendo las 
+Una vez instalado Rancher es recomendable generar una GPG key para securizar los secrets. para ello hacmoes lo siguiente:
+\includegraphics{pass00.png}
+\includegraphics{rancher00.png}
+
+Se instala docker desktop siguiendo las instrucciones de la página oficial
 https://docs.docker.com/desktop/setup/install/linux/ubuntu/
 
+comprobamos que se han instalado correctamente tanto kubectl como docker
+\includegraphics{dockerKubectlVerions.png}
+\includegraphics{docker00.png}
 
+
+el usuario debe tener permisos de docker y de video 
+
+  sudo usermod -aG video $USER
+    sudo usermod -aG docker $USER
 \end{document}
