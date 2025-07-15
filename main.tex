@@ -148,6 +148,29 @@
 	}
 }
 
+\newcommand{\lstnginxconfig}{
+	\lstset{
+		backgroundcolor=\color{black!5}, % Fondo gris claro para el bloque de código
+		commentstyle=\color{gray!80}\ttfamily, % Comentarios en gris y monospace
+		keywordstyle=\color{red!70!black}\bfseries, % Palabras clave (ej. user, worker_processes) en rojo oscuro y negrita
+		stringstyle=\color{orange!80!black}\ttfamily, % Cadenas (si las hubiera, aunque aquí no son predominantes)
+		basicstyle=\ttfamily\small, % Fuente básica monospace y pequeña
+		numbers=left, % Números de línea a la izquierda
+		numberstyle=\tiny\color{gray}, % Estilo de los números de línea
+		frame=single, % Marco alrededor del código
+		framesep=5pt, % Espaciado del marco
+		framerule=0.5pt, % Grosor del marco
+		rulesepcolor=\color{gray!20}, % Color de las líneas de separación
+		breaklines=true, % Permite saltos de línea
+		captionpos=b, % Posición del título (abajo)
+		tabsize=4, % Tamaño de la tabulación
+		showstringspaces=false, % No muestra espacios en blanco en las cadenas
+		% Definición de palabras clave específicas de Nginx
+		keywords={user, worker_processes, error_log, pid, events, worker_connections, rtmp, server, listen, chunk_size, application, live, record, hls, hls_path, hls_fragment, hls_playlist_length, hls_sync, dash, dash_path, dash_fragment, dash_playlist_length, play},
+		morecomment=[l]{\#}, % Comentarios de una línea que empiezan con #
+		morestring=[b]", % Cadenas entre comillas dobles
+	}
+}
 
 % Comenzamos el documento
 \begin{document}
