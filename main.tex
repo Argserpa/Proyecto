@@ -1,6 +1,6 @@
 % Comandos para crear la portada y la primera página del PFG
 %% Título del PFG
-\newcommand{\PFGtitulo}{Planificación eficiente de infraestructuras virtuales basadas en docker y kubernetes para el streaming de vídeo}
+\newcommand{\PFGtitulo}{Virtualización ligera y cloud computing para el despliegue de servidores streaming para la docencia online de ingeniería.}
 %% Autor/a y directores/as del PFG
 \newcommand{\PFGautor}{Ángel Roberto García Serpa}
 \newcommand{\PFGdirector}{Agustín Carlos Caminero Herráez}
@@ -15,12 +15,12 @@
 %% específica
 \newcommand{\PFGmodalidad}{genérica}
 %% Curso académico en formato 20xx/20xx+1. Por ejemplo 2022/2023
-\newcommand{\PFGcursoacademico}{2022/2023}
+\newcommand{\PFGcursoacademico}{2025/2026}
 %% Convocatoria. A elegir entre:
 %% junio
 %% septiembre
 %% diciembre
-\newcommand{\PFGconvocatoria}{junio}
+\newcommand{\PFGconvocatoria}{diciembre}
 %% Fecha de lectura (si no se sabe el día concreto, poner mes y año}
 \newcommand{\PFGfechadefensa}{Fecha de lectura}
 
@@ -28,6 +28,9 @@
 \documentclass[12pt]{book}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\usepackage{indentfirst}% This package sets the boolean \@afterindentfalse to (always) true
+\usepackage[T1]{fontenc}
+%\usepackage{tgbonum}
 \usepackage[papersize={210mm,297mm},tmargin=25mm,bmargin=25mm,lmargin=20mm,rmargin=20mm]{geometry}
 
 % no indentar los párrafos
@@ -243,25 +246,22 @@
 
 \chapter*{Resumen} % El * indica que no queremos que añada la palabra "Capitulo"
 
-Se pretende realizar despliegue y evaluación de diversas tecnologías de servidores de streaming de video sobre contenedores ligeros. Para la consecución del objetivo principal, se deberán realizar los siguientes:
-\begin{list}{·}{}
-	\item Creación de las infraestructuras paralelas distribuidas.
-	\item Recopilación de información sobre servidores de streaming de video.
-	\item Puesta en marcha y evaluación de prestaciones de los servidores de vídeo seleccionados.
-	\item Generación de documentación para el despliegue de los servidores utilizados tanto en local como en la nube.
-\end{list}
+Este proyecto se centra en configurar varios servidores que sean capaces de manejar streaming de video sobre contenedores Docker. Esta configuración será tanto en local como en AWS . Otro aspecto clave es el uso de kubernetes para ayudar con el despliegue y escalado de las aplicaciones consiguiendo un manejo eficiente de los recursos en cada momento. Para esto último es necesaria la monitorización de los contenedores. 
+Se han elegido dos tecnologías muy utilizadas en este momento en el streaming de video y las videollamdas, como son HLS y WebRTC.
+
 
 \chapter*{Abstract} % El * indica que no queremos que añada la palabra "Capitulo"
 
-Resúmen del PFG en inglés.
+This project focuses on configuring several video streaming servers using Docker containers. This configuration will be both in local and on AWS. Another key aspect is the use of kubernetes that is in charge of automating de deploying, scaling and management of the containerized applications. For achieving this last part it is necesary monitoring the applications.
+Two technologies, such as HLS and WebRTC, were choosed for this Project because they are widely used at the moment in video streaming.
 
 \chapter*{Palabras clave} % El * indica que no queremos que añada la palabra "Capitulo"
 
-video, distribuido, Kubernetes 
+servidores de video, HLS, WebRTC, Docker, Kubernetes 
 
 \chapter*{Keywords} % El * indica que no queremos que añada la palabra "Capitulo"
 
-video, distributed, Kubernetes
+video servers, HLS, WebRTC, Docker, Kubernetes
 
 \tableofcontents %% Índice general
 \listoftables    %% Índice de tablas
