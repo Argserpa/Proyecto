@@ -2,7 +2,8 @@
 
 \begin{document}
 
-Se seguira el libro Mastering kubernetes (ToDo ) en su cuarta edicion. Para la creacion del cluster es necesario instalar Rancher desktop (https://docs.rancherdesktop.io/getting-started/installation/\#linux) que es una aplicacion de escritorio que permitira ejecutar Docker. Rancher Desktop instalara otras herramientas como: 
+Se seguira el libro Mastering kubernetes (ToDo ) en su cuarta edicion. Para la creacion del cluster es necesario instalar Rancher desktop
+\href{https://docs.rancherdesktop.io/getting-started/installation/\#linux}{Instalar Rancher}. Ésta es una aplicacion de escritorio que permitira ejecutar Docker. Rancher Desktop instalara otras herramientas como: 
 
 \begin{itemize}
 	\item 	Helm
@@ -15,22 +16,52 @@ Se seguira el libro Mastering kubernetes (ToDo ) en su cuarta edicion. Para la c
 Se instala pass, necesario para guardar credenciales que se pasan via docker login y nerdctl login.
 
 Una vez instalado Rancher es recomendable generar una GPG key para securizar los secrets. para ello hacmoes lo siguiente:
-\includegraphics{pass00.png}
-\includegraphics{rancher00.png}
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{pass00.png}
+		\caption{Generar gpg key}
+	\end{minipage}
+	\label{fig:figure0001}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{rancher00.png}
+		\caption{Rancher}
+	\end{minipage}
+	\label{fig:figure0002}
+\end{figure}
+
 
 Se instala docker desktop siguiendo las instrucciones de la página oficial
-https://docs.docker.com/desktop/setup/install/linux/ubuntu/
+\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker} 
 
 comprobamos que se han instalado correctamente tanto kubectl como docker
-\includegraphics{dockerKubectlVerions.png}
-\includegraphics{docker00.png}
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{dockerKubectlVerions.png}
+		\caption{versiones de Docker y kubernetes}
+	\end{minipage}
+	\label{fig:figure0003}
+\end{figure}
 
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{docker00.png}
+		\caption{Docker}
+	\end{minipage}
+	\label{fig:figure0004}
+\end{figure}
 
 el usuario debe tener permisos de docker y de video 
-
+\begin{lstlisting}
   sudo usermod -aG video $USER
     sudo usermod -aG docker $USER
-    
+\end{lstlisting}    
     
     
     
@@ -39,16 +70,192 @@ Opción B:
 Se utiliza una distribución basada en Ubuntu como es Mint en su versión XFCE que es una versión ligera y se realiza la instalación en una MV para comprobar que la instalación funciona
 se deb instalar: 
 Docker:
-seguimos las instrucciones:
-\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker}.
+Siguiendo las instrucciones de la Documentación de Docker::
+\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker} 
 
-\includegraphics{001 install Docker Desktop.png}
-\includegraphics{002 install Docker Desktop.png}
-\includegraphics{003 install Docker Desktop.png}
-\includegraphics{004 install Docker Desktop.png}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{000Docker.png}
+		\caption{Instalacion Docker}
+	\end{minipage}	
+	\label{fig:figure001}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{001Docker.png}
+		\caption{Instalacion Docker}
+	\end{minipage}
+	\label{fig:figure002}
+\end{figure}
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{002Docker.png}
+		\caption{Instalacion Docker}
+	\end{minipage}		
+	\label{fig:figure003}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{003Docker.png}
+		\caption{Instalacion Docker}
+	\end{minipage}		
+	\label{fig:figure004}
+\end{figure}
+
+añadimos el usuario al grupo de Docker y probamos qeu se puede ejecutar sin sudo:
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{004Docker.png}
+		\caption{Instalacion Docker}
+	\end{minipage}
+	\label{fig:figure005}
+\end{figure}
+
+
+
 kubectl
 \href{https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux}{Instalar Kubectl}.
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{005Kubectl.png}
+		\caption{Instalacion Kubectl}
+	\end{minipage}
+	\label{fig:figure006}
+\end{figure}
 
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{006Kubectl.png}
+		\caption{Instalacion Kubectl}
+	\end{minipage}
+	\label{fig:figure007}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{007Kubectl.png}
+		\caption{Instalacion Kubectl}
+	\end{minipage}
+	\label{fig:figure008}
+\end{figure}
+
+
+Instalamos y comprobamos versión de docker compose
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{008DockerCompose.png}
+		\caption{Instalacion Docker Compose}
+	\end{minipage}
+	\label{fig:figure009}
+\end{figure}
+
+Para poder utilizar Docker Desktop en una MV se debe configurar en VirtualBox:
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{009DockerDesktop.png}
+		\caption{Configurar Virtualización}
+	\end{minipage}
+	\label{fig:figure010}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{010DockerDesktop.png}
+		\caption{Configurar Virtualización}
+	\end{minipage}
+	\label{fig:figure011}
+\end{figure}
+
+Tras configurar la virtualización y reiniciar, se puede ver que se ejecuta correctamente Docker Desktop
+\begin{figure}[h!]	
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{011DockerDesktop.png}
+		\caption{Docker Desktop en ejecución}
+	\end{minipage}		
+	\label{fig:figure012}
+\end{figure}
+
+Una vez instalado todo podemos empezar a ejecutar el servidor:
+
+Se utiliza el comando : 
+\begin{lstlisting}
+docker build -t nginx-rtmp-server .
+\end{lstlisting}
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{012BuildingProject.png}
+		\caption{Construyendo el proyecto}
+	\end{minipage}
+	\label{fig:figure013}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{013BuildingProject.png}
+		\caption{Construyendo el proyecto}
+	\end{minipage}
+	\label{fig:figure014}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{014BuildingProject.png}
+		\caption{Proyecto construido}
+	\end{minipage}
+	\label{fig:figure015}
+\end{figure}
+
+
+Se levanta el servidor con la instrucción:
+
+\begin{lstlisting}
+docker run -d -p 1935:1935 -p 80:80 -p 443:443 --name nginx-stream --network streaming_network nginx-rtmp-server &&  docker logs -f nginx-stream
+\end{lstlisting}
+
+
+
+Puede dar un error si no está creada la red y se revisa con el siguiente comando:
+\begin{lstlisting}
+docker network create streaming_network
+docker network ls
+\end{lstlisting}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{015RunningProject.png}
+		\caption{Ejecutando el proyecto}
+	\end{minipage}
+	\label{fig:figure016}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{016RunningProject.png}
+	\caption{Ejecutando el proyecto}
+	\end{minipage}		
+	\label{fig:figure017}
+\end{figure}
 
 
 \end{document}
