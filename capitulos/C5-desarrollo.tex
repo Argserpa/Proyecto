@@ -1,72 +1,72 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-
-Se seguira el libro Mastering kubernetes (ToDo ) en su cuarta edicion. Para la creacion del cluster es necesario instalar Rancher desktop
-\href{https://docs.rancherdesktop.io/getting-started/installation/\#linux}{Instalar Rancher}. Ésta es una aplicacion de escritorio que permitira ejecutar Docker. Rancher Desktop instalara otras herramientas como: 
-
-\begin{itemize}
-	\item 	Helm
-	\item 	Kubectl
-	\item 	Nerdctl
-	\item 	Moby (open source Docker)
-	\item 	Docker Compose
-\end{itemize}
-
-Se instala pass, necesario para guardar credenciales que se pasan via docker login y nerdctl login.
-
-Una vez instalado Rancher es recomendable generar una GPG key para securizar los secrets. para ello hacmoes lo siguiente:
-\begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{pass00.png}
-		\caption{Generar gpg key}
-	\end{minipage}
-	\label{fig:figure0001}
-\end{figure}
-
-\begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{rancher00.png}
-		\caption{Rancher}
-	\end{minipage}
-	\label{fig:figure0002}
-\end{figure}
-
-
-Se instala docker desktop siguiendo las instrucciones de la página oficial
-\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker} 
-
-comprobamos que se han instalado correctamente tanto kubectl como docker
-\begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{dockerKubectlVerions.png}
-		\caption{versiones de Docker y kubernetes}
-	\end{minipage}
-	\label{fig:figure0003}
-\end{figure}
-
-\begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{docker00.png}
-		\caption{Docker}
-	\end{minipage}
-	\label{fig:figure0004}
-\end{figure}
-
-el usuario debe tener permisos de docker y de video 
-\begin{lstlisting}
-  sudo usermod -aG video $USER
-    sudo usermod -aG docker $USER
-\end{lstlisting}    
+%
+%\section{opción A}
+%
+%Se seguira el libro Mastering kubernetes \textbf{Revisar ToDo} en su cuarta edicion. Para la creacion del cluster es necesario instalar Rancher desktop
+%\href{https://docs.rancherdesktop.io/getting-started/installation/\#linux}{Instalar Rancher}. Ésta es una aplicacion de escritorio que permitira ejecutar Docker. Rancher Desktop instalara otras herramientas como: 
+%
+%\begin{itemize}
+%	\item 	Helm
+%	\item 	Kubectl
+%	\item 	Nerdctl
+%	\item 	Moby (open source Docker)
+%	\item 	Docker Compose
+%\end{itemize}
+%
+%Se instala pass, necesario para guardar credenciales que se pasan via docker login y nerdctl login.
+%
+%Una vez instalado Rancher es recomendable generar una GPG key para securizar los secrets. para ello hacmoes lo siguiente:
+%\begin{figure}[h!]
+%	\begin{minipage}{0.7\textwidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{pass00.png}
+%		\caption{Generar gpg key}
+%	\end{minipage}
+%	\label{fig:figure0001}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%	\begin{minipage}{0.7\textwidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{rancher00.png}
+%		\caption{Rancher}
+%	\end{minipage}
+%	\label{fig:figure0002}
+%\end{figure}
+%
+%
+%Se instala docker desktop siguiendo las instrucciones de la página oficial
+%\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker} 
+%
+%comprobamos que se han instalado correctamente tanto kubectl como docker
+%\begin{figure}[h!]
+%	\begin{minipage}{0.7\textwidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{dockerKubectlVerions.png}
+%		\caption{versiones de Docker y kubernetes}
+%	\end{minipage}
+%	\label{fig:figure0003}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%	\begin{minipage}{0.7\textwidth}
+%		\centering
+%		\includegraphics[width=\textwidth]{docker00.png}
+%		\caption{Docker}
+%	\end{minipage}
+%	\label{fig:figure0004}
+%\end{figure}
+%
+%el usuario debe tener permisos de docker y de video 
+%\begin{lstlisting}
+%  sudo usermod -aG video $USER
+%    sudo usermod -aG docker $USER
+%\end{lstlisting}    
     
-    
-    
-    
-Opción B:
+%\pagebreak
+%\section{opción B, de momento sigue esta}
 Se utiliza una distribución basada en Ubuntu como es Mint en su versión XFCE que es una versión ligera y se realiza la instalación en una MV para comprobar que la instalación funciona
 se deb instalar: 
 Docker:
