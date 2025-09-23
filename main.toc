@@ -6,24 +6,21 @@
 \contentsline {chapter}{\numberline {3}Propuesta}{5}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Diseño}{7}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Desarrollo del proyecto}{9}{chapter.5}%
-\contentsline {section}{\numberline {5.1}opción A}{9}{section.5.1}%
-\contentsline {section}{\numberline {5.2}opción B}{9}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Pruebas}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{27}{chapter.7}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{29}{chapter*.33}%
-\contentsline {chapter}{\numberline {A}}{31}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Fe de erratas}{31}{section.Alph1.1}%
-\contentsline {chapter}{\numberline {B}}{33}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}VirtualBox}{33}{section.Alph2.1}%
-\contentsline {subsection}{\numberline {B.1.1}instalación}{33}{subsection.Alph2.1.1}%
-\contentsline {subsection}{\numberline {B.1.2}Guest Additions}{33}{subsection.Alph2.1.2}%
-\contentsline {subsection}{\numberline {B.1.3}configuración de la red de los equipos:}{33}{subsection.Alph2.1.3}%
-\contentsline {section}{\numberline {B.2}Instalación de Ansible and sshpass}{33}{section.Alph2.2}%
-\contentsline {section}{\numberline {B.3}Instalación de de kubeadm}{38}{section.Alph2.3}%
-\contentsline {subsection}{\numberline {B.3.1}instalación kubectl}{38}{subsection.Alph2.3.1}%
-\contentsline {subsection}{\numberline {B.3.2}Instalación de docker Engine}{40}{subsection.Alph2.3.2}%
-\contentsline {subsubsection}{\numberline {B.3.2.1}Configuración del repositorio}{40}{subsubsection.Alph2.3.2.1}%
-\contentsline {subsubsection}{\numberline {B.3.2.2}Instalación de kubelet y kubeadm}{41}{subsubsection.Alph2.3.2.2}%
-\contentsline {section}{\numberline {B.4}Creación del cluster}{42}{section.Alph2.4}%
-\contentsline {section}{\numberline {B.5}Instalar programas de obs}{45}{section.Alph2.5}%
-\contentsline {subsection}{\numberline {B.5.1}install obs studio}{45}{subsection.Alph2.5.1}%
+\contentsline {subsection}{\numberline {5.0.1}Servidor nginx HLS }{17}{subsection.5.0.1}%
+\contentsline {chapter}{\numberline {6}Pruebas}{21}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{23}{chapter.7}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{25}{chapter*.32}%
+\contentsline {chapter}{\numberline {A}}{27}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Fe de erratas}{27}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {B}}{29}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}VirtualBox}{29}{section.Alph2.1}%
+\contentsline {subsection}{\numberline {B.1.1}instalación}{29}{subsection.Alph2.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}Guest Additions}{29}{subsection.Alph2.1.2}%
+\contentsline {section}{\numberline {B.2}Instalación de Ansible and sshpass}{29}{section.Alph2.2}%
+\contentsline {section}{\numberline {B.3}Instalación de de kubeadm}{30}{section.Alph2.3}%
+\contentsline {subsection}{\numberline {B.3.1}instalación kubectl}{30}{subsection.Alph2.3.1}%
+\contentsline {subsection}{\numberline {B.3.2}Instalación de docker Engine}{32}{subsection.Alph2.3.2}%
+\contentsline {subsubsection}{\numberline {B.3.2.1}Configuración del repositorio}{32}{subsubsection.Alph2.3.2.1}%
+\contentsline {subsubsection}{\numberline {B.3.2.2}Instalación de kubelet y kubeadm}{34}{subsubsection.Alph2.3.2.2}%
+\contentsline {section}{\numberline {B.4}Creación del cluster}{34}{section.Alph2.4}%
+\contentsline {section}{\numberline {B.5}Instalar obs studio}{37}{section.Alph2.5}%

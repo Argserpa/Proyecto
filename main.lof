@@ -4,33 +4,34 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Generar gpg key}}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Rancher}}{11}{figure.caption.13}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces versiones de Docker y kubernetes}}{12}{figure.caption.14}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Docker}}{12}{figure.caption.15}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Instalacion Docker}}{13}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Instalacion Docker}}{13}{figure.caption.17}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Instalacion Docker}}{14}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Instalacion Docker}}{14}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Instalacion Docker}}{15}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Instalacion Kubectl}}{15}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Instalacion Kubectl}}{16}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Instalacion Kubectl}}{16}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Instalacion Docker Compose}}{17}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Configurar Virtualización}}{17}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Configurar Virtualización}}{18}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Docker Desktop en ejecución}}{18}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Construyendo el proyecto}}{19}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Construyendo el proyecto}}{19}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Proyecto construido}}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Ejecutando el proyecto}}{20}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Ejecutando el proyecto}}{21}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Instalacion Docker:primeros pasos.}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Instalacion Docker: Instalar paquetes de Docker.}}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Instalacion Docker: comprobar que funciona correctamente.}}{10}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Instalacion Docker: usuario }}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Instalacion Docker}}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Instalacion Kubectl}}{11}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Instalacion Kubectl}}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Instalacion Kubectl}}{12}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Instalacion Docker Compose}}{13}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Configurar Virtualización}}{13}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Configurar Virtualización}}{14}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Docker Desktop en ejecución}}{14}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Construyendo el proyecto}}{15}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Construyendo el proyecto}}{15}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Proyecto construido}}{16}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Ejecutando el proyecto}}{16}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Ejecutando el proyecto}}{16}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces docker-compose 1 de 3}}{19}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces docker-compose 2 de 3}}{19}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces docker-compose 3 de 3}}{19}{figure.caption.31}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Configuración Adaptador 1.}}{42}{figure.caption.34}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Configuración Adaptador 2.}}{42}{figure.caption.35}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Direcciones de los adaptadores en la Máquina Virtual.}}{43}{figure.caption.36}%
-\contentsline {figure}{\numberline {B.4}{\ignorespaces kube-flannel.yml.}}{45}{figure.caption.37}%
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Ejecución del comando get nodes.}}{45}{figure.caption.38}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Configuración Adaptador 1.}}{34}{figure.caption.33}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Configuración Adaptador 2.}}{35}{figure.caption.34}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Direcciones de los adaptadores en la Máquina Virtual.}}{35}{figure.caption.35}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces kube-flannel.yml.}}{37}{figure.caption.36}%
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Ejecución del comando get nodes.}}{37}{figure.caption.37}%
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Configuración OBS stream.}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Configuración OBS Output.}}{38}{figure.caption.39}%

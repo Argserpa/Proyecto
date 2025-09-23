@@ -69,16 +69,18 @@
 %\section{opción B, de momento sigue esta}
 Se utiliza una distribución basada en Ubuntu como es Mint en su versión XFCE que es una versión ligera y se realiza la instalación en una MV para comprobar que la instalación funciona
 se deb instalar: 
-Docker:
-Siguiendo las instrucciones de la Documentación de Docker::
-\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker} 
+Docker Engine:
+Siguiendo las instrucciones de la Documentación de Docker:
+\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker Engine} 
+
+\href{https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository}{Instalar Docker Desktop} 
 
 
 \begin{figure}[h!]
 	\begin{minipage}{0.7\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{000Docker.png}
-		\caption{Instalacion Docker}
+		\caption{Instalacion Docker:primeros pasos.}
 	\end{minipage}	
 	\label{fig:figure001}
 \end{figure}
@@ -88,7 +90,7 @@ Siguiendo las instrucciones de la Documentación de Docker::
 	\begin{minipage}{0.7\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{001Docker.png}
-		\caption{Instalacion Docker}
+		\caption{Instalacion Docker: Instalar paquetes de Docker.}
 	\end{minipage}
 	\label{fig:figure002}
 \end{figure}
@@ -96,7 +98,7 @@ Siguiendo las instrucciones de la Documentación de Docker::
 	\begin{minipage}{0.7\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{002Docker.png}
-		\caption{Instalacion Docker}
+		\caption{Instalacion Docker: comprobar que funciona correctamente.}
 	\end{minipage}		
 	\label{fig:figure003}
 \end{figure}
@@ -105,12 +107,14 @@ Siguiendo las instrucciones de la Documentación de Docker::
 	\begin{minipage}{0.7\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{003Docker.png}
-		\caption{Instalacion Docker}
+		\caption{Instalacion Docker: usuario }
 	\end{minipage}		
 	\label{fig:figure004}
 \end{figure}
 
-añadimos el usuario al grupo de Docker y probamos qeu se puede ejecutar sin sudo:
+Añadimos el usuario al grupo de Docker y probamos que se puede ejecutar sin sudo:
+
+https://docs.docker.com/desktop/setup/install/linux/ubuntu/
 \begin{figure}[h!]
 	\begin{minipage}{0.7\textwidth}
 		\centering
@@ -216,7 +220,7 @@ docker build -t nginx-rtmp-server .
 \end{figure}
 
 \begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
+	\begin{minipage}{0.6\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{014BuildingProject.png}
 		\caption{Proyecto construido}
@@ -240,7 +244,7 @@ docker network ls
 \end{lstlisting}
 
 \begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
+	\begin{minipage}{0.6\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{015RunningProject.png}
 		\caption{Ejecutando el proyecto}
@@ -249,12 +253,60 @@ docker network ls
 \end{figure}
 
 \begin{figure}[h!]
-	\begin{minipage}{0.7\textwidth}
+	\begin{minipage}{0.6\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{016RunningProject.png}
 	\caption{Ejecutando el proyecto}
 	\end{minipage}		
 	\label{fig:figure017}
+\end{figure}
+\clearpage
+
+
+\subsection{Servidor nginx HLS }
+
+Los ficheros de configuración del servidor son los siguientes:
+\begin{itemize}
+	\item 	Carpeta certs: carpeta con los certificados para la ejecución protegida del servidor
+	\item 	Carpeta Monitoring: carpeta con la configuración de prometheus y el docker-compose para la ejecución de todos los servicios. 
+	\item 	Dockerfile: configuración de la imagen docker
+	\item 	LICENSE licencia MIT
+	\item 	main.html: pagina principal del servidor donde se puede conectar desde cualqueir navegador con acceso a la red del servidor
+	\item 	nginx.conf: Configuración del servidor nginx
+	\item 	README.md: información importante para configurar y desplegar el servidor	
+\end{itemize}
+
+\textbf{Revisar} ver si es mejor usar imágenes o texto para los ficheros del proyecto
+
+
+\lstinputlisting[style=yaml]{servers/NginxRTPM/monitoring/docker-compose.yml}
+
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{019docker-compose00.png}
+		\caption{docker-compose 1 de 3}
+	\end{minipage}
+	\label{fig:figure018}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{019docker-compose01.png}
+		\caption{docker-compose 2 de 3}
+	\end{minipage}		
+	\label{fig:figure019}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{minipage}{0.7\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{019docker-compose02.png}
+		\caption{docker-compose 3 de 3}
+	\end{minipage}		
+	\label{fig:figure020}
 \end{figure}
 
 
