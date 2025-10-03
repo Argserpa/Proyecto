@@ -2,15 +2,19 @@
 
 \begin{document}
 	\textbf{Falta rellenar los items}
+En este apartado se descrbirán las tecnologías utilizadas para el desarrollo del proyecto. Veremos las tecnologías de transmisión de vídeo, los codecs modernos y protocolos de codificación. También se detallarán las diferencias entre los diferentes tipos de virtualización, la forma en que la arquitectura del sistema puede facilitar el desarrollo, despliegue y monitorización del mismo. 	
 
 1. Streaming de vídeo: fundamentos y tecnologías actuales
+¿Qué entendemos por streaming? 
+Streaming es el envío de video y audio mediante internet siendo consumido en el momento en que se recibe sin tener que esperar a que se descargue completamente el archivo completo. Ésto conlleva una serie de procedimientos que deben llevarse a cabo para que los datos pasen eficientemente del emisor alreceptor. Tanto imagen y audio, se deben capturar y codificar mediante un codec. 
 \begin{itemize}
 	\item 	Codificación y codecs modernos: formatos como AV1, VP9 o H.264, sus ventajas respecto a calidad y eficiencia energética.
+	
 	\item 	Adaptive Bitrate Streaming (ABR): protocolos como MPEG‑DASH, HLS o Smooth Streaming y cómo funcionan los algoritmos del cliente para ajustar calidad según ancho de banda.	
 	\item 	Arquitecturas de extremo a extremo: revisión holística del pipeline de streaming, incluyendo captura, ingesta, transcodificación, entrega (CDN) y reproducción cliente.
-	\item 	Edge \& MEC (Mobile Edge Computing): almacenamiento y procesamiento en nodos cerca del usuario para mejorar latencia y eficiencia, uso de IA para caching y offloading.
-	\item 	Modelos híbridos P2P‑CDN: arquitectura híbrida que mejora la latencia, el consumo energético y la calidad para streaming en vivo
-	\item Codificación adaptativa energéticamente eficiente: estrategias como LADRE con algoritmos ML para balancear calidad, latencia y consumo energético.
+%	\item 	Edge \& MEC (Mobile Edge Computing): almacenamiento y procesamiento en nodos cerca del usuario para mejorar latencia y eficiencia, uso de IA para caching y offloading.
+%	\item 	Modelos híbridos P2P‑CDN: arquitectura híbrida que mejora la latencia, el consumo energético y la calidad para streaming en vivo
+%	\item Codificación adaptativa energéticamente eficiente: estrategias como LADRE con algoritmos ML para balancear calidad, latencia y consumo energético.
 \end{itemize}
 
 2. Contenerización y orquestación de servidores de contenidos
