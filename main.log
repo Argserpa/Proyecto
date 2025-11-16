@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.1)  18 SEP 2025 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.1)  9 NOV 2025 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -541,7 +541,7 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedRightParindent=\skip80
 \JustifyingParindent=\skip81
 )
-<imagenes/rosadelosvientos.png, id=95, 135.50626pt x 135.50626pt>
+<imagenes/rosadelosvientos.png, id=99, 135.50626pt x 135.50626pt>
 File: imagenes/rosadelosvientos.png Graphic file (type png)
 <use imagenes/rosadelosvientos.png>
 Package pdftex.def Info: imagenes/rosadelosvientos.png  used on input line 199.
@@ -684,42 +684,36 @@ LaTeX Info: Redefining \% on input line 294.
 ]
 Cap\'{\i }tulo 2.
 (capitulos/C2-estado_arte.tex
-Overfull \hbox (20.39949pt too wide) in paragraph at lines 9--10
+Overfull \hbox (20.39949pt too wide) in paragraph at lines 13--14
 []\T1/cmr/m/n/12 Adaptive Bitrate Streaming (ABR): protocolos como MPEG[]DASH, 
 HLS o Smooth Streaming
  []
 
 
-Overfull \hbox (6.03062pt too wide) in paragraph at lines 10--11
+Overfull \hbox (6.03062pt too wide) in paragraph at lines 14--18
 []\T1/cmr/m/n/12 Arquitecturas de extremo a extremo: revisión holística del pip
 eline de streaming, incluyendo
  []
 
 
-Overfull \hbox (5.30312pt too wide) in paragraph at lines 13--14
-[]\T1/cmr/m/n/12 Codificación adaptativa energéticamente eficiente: estrategias
- como LADRE con algoritmos
- []
-
-
-Overfull \hbox (7.95378pt too wide) in paragraph at lines 21--22
+Overfull \hbox (7.95378pt too wide) in paragraph at lines 25--26
 []\T1/cmr/m/n/12 Monitoreo y registro en pipelines contenedorizados: prácticas 
 clave en DevOps para asegurar
  []
 
-)
 
-[3]
+
+[3])
 
 LaTeX Info: Redefining \. on input line 296.
 LaTeX Info: Redefining \% on input line 296.
-[4
-
-]
+[4]
 Cap\'{\i }tulo 3.
 (capitulos/C3-propuesta.tex)
 
-[5]
+[5
+
+]
 
 LaTeX Info: Redefining \. on input line 298.
 LaTeX Info: Redefining \% on input line 298.
@@ -738,17 +732,17 @@ LaTeX Info: Redefining \% on input line 300.
 ]
 Cap\'{\i }tulo 5.
 (capitulos/C5-desarrollo.tex
-<imagenes/000Docker.png, id=305, 1440.38126pt x 934.49126pt>
+<imagenes/000Docker.png, id=310, 1440.38126pt x 934.49126pt>
 File: imagenes/000Docker.png Graphic file (type png)
 <use imagenes/000Docker.png>
 Package pdftex.def Info: imagenes/000Docker.png  used on input line 82.
 (pdftex.def)             Requested size: 338.58632pt x 219.6625pt.
-<imagenes/001Docker.png, id=307, 1440.38126pt x 934.49126pt>
+<imagenes/001Docker.png, id=312, 1440.38126pt x 934.49126pt>
 File: imagenes/001Docker.png Graphic file (type png)
 <use imagenes/001Docker.png>
 Package pdftex.def Info: imagenes/001Docker.png  used on input line 92.
 (pdftex.def)             Requested size: 338.58632pt x 219.6625pt.
-<imagenes/002Docker.png, id=308, 1440.38126pt x 934.49126pt>
+<imagenes/002Docker.png, id=313, 1440.38126pt x 934.49126pt>
 File: imagenes/002Docker.png Graphic file (type png)
 <use imagenes/002Docker.png>
 Package pdftex.def Info: imagenes/002Docker.png  used on input line 100.
@@ -761,7 +755,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--101
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/003Docker.png, id=309, 1440.38126pt x 934.49126pt>
+<imagenes/003Docker.png, id=314, 1440.38126pt x 934.49126pt>
 File: imagenes/003Docker.png Graphic file (type png)
 <use imagenes/003Docker.png>
 Package pdftex.def Info: imagenes/003Docker.png  used on input line 109.
@@ -772,7 +766,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [9 <./imagenes/000Docker.png> <./imagenes/001Docker.png>]
-<imagenes/004Docker.png, id=316, 1440.38126pt x 934.49126pt>
+<imagenes/004Docker.png, id=321, 1440.38126pt x 934.49126pt>
 File: imagenes/004Docker.png Graphic file (type png)
 <use imagenes/004Docker.png>
 Package pdftex.def Info: imagenes/004Docker.png  used on input line 121.
@@ -781,7 +775,7 @@ Package pdftex.def Info: imagenes/004Docker.png  used on input line 121.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/005Kubectl.png, id=318, 1323.94624pt x 891.33pt>
+<imagenes/005Kubectl.png, id=323, 1323.94624pt x 891.33pt>
 File: imagenes/005Kubectl.png Graphic file (type png)
 <use imagenes/005Kubectl.png>
 Package pdftex.def Info: imagenes/005Kubectl.png  used on input line 134.
@@ -789,7 +783,7 @@ Package pdftex.def Info: imagenes/005Kubectl.png  used on input line 134.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/006Kubectl.png, id=319, 1323.94624pt x 891.33pt>
+<imagenes/006Kubectl.png, id=324, 1323.94624pt x 891.33pt>
 File: imagenes/006Kubectl.png Graphic file (type png)
 <use imagenes/006Kubectl.png>
 Package pdftex.def Info: imagenes/006Kubectl.png  used on input line 143.
@@ -797,7 +791,7 @@ Package pdftex.def Info: imagenes/006Kubectl.png  used on input line 143.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/007Kubectl.png, id=320, 1323.94624pt x 891.33pt>
+<imagenes/007Kubectl.png, id=325, 1323.94624pt x 891.33pt>
 File: imagenes/007Kubectl.png Graphic file (type png)
 <use imagenes/007Kubectl.png>
 Package pdftex.def Info: imagenes/007Kubectl.png  used on input line 152.
@@ -805,7 +799,7 @@ Package pdftex.def Info: imagenes/007Kubectl.png  used on input line 152.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/008DockerCompose.png, id=321, 1440.38126pt x 934.49126pt>
+<imagenes/008DockerCompose.png, id=326, 1440.38126pt x 934.49126pt>
 File: imagenes/008DockerCompose.png Graphic file (type png)
 <use imagenes/008DockerCompose.png>
 Package pdftex.def Info: imagenes/008DockerCompose.png  used on input line 163.
@@ -814,7 +808,7 @@ Package pdftex.def Info: imagenes/008DockerCompose.png  used on input line 163.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/009DockerDesktop.png, id=322, 748.7975pt x 534.99875pt>
+<imagenes/009DockerDesktop.png, id=327, 748.7975pt x 534.99875pt>
 File: imagenes/009DockerDesktop.png Graphic file (type png)
 <use imagenes/009DockerDesktop.png>
 Package pdftex.def Info: imagenes/009DockerDesktop.png  used on input line 173.
@@ -823,7 +817,7 @@ Package pdftex.def Info: imagenes/009DockerDesktop.png  used on input line 173.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/010DockerDesktop.png, id=323, 748.7975pt x 534.99875pt>
+<imagenes/010DockerDesktop.png, id=328, 748.7975pt x 534.99875pt>
 File: imagenes/010DockerDesktop.png Graphic file (type png)
 <use imagenes/010DockerDesktop.png>
 Package pdftex.def Info: imagenes/010DockerDesktop.png  used on input line 182.
@@ -832,7 +826,7 @@ Package pdftex.def Info: imagenes/010DockerDesktop.png  used on input line 182.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/011DockerDesktop.png, id=324, 1288.815pt x 884.30376pt>
+<imagenes/011DockerDesktop.png, id=329, 1288.815pt x 884.30376pt>
 File: imagenes/011DockerDesktop.png Graphic file (type png)
 <use imagenes/011DockerDesktop.png>
 Package pdftex.def Info: imagenes/011DockerDesktop.png  used on input line 192.
@@ -841,7 +835,7 @@ Package pdftex.def Info: imagenes/011DockerDesktop.png  used on input line 192.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/012BuildingProject.png, id=325, 1393.205pt x 899.36pt>
+<imagenes/012BuildingProject.png, id=330, 1393.205pt x 899.36pt>
 File: imagenes/012BuildingProject.png Graphic file (type png)
 <use imagenes/012BuildingProject.png>
 Package pdftex.def Info: imagenes/012BuildingProject.png  used on input line 20
@@ -855,7 +849,7 @@ LaTeX Info: Redefining \% on input line 211.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/013BuildingProject.png, id=335, 1393.205pt x 899.36pt>
+<imagenes/013BuildingProject.png, id=340, 1393.205pt x 899.36pt>
 File: imagenes/013BuildingProject.png Graphic file (type png)
 <use imagenes/013BuildingProject.png>
 Package pdftex.def Info: imagenes/013BuildingProject.png  used on input line 21
@@ -864,7 +858,7 @@ Package pdftex.def Info: imagenes/013BuildingProject.png  used on input line 21
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/014BuildingProject.png, id=336, 1393.205pt x 899.36pt>
+<imagenes/014BuildingProject.png, id=341, 1393.205pt x 899.36pt>
 File: imagenes/014BuildingProject.png Graphic file (type png)
 <use imagenes/014BuildingProject.png>
 Package pdftex.def Info: imagenes/014BuildingProject.png  used on input line 22
@@ -879,7 +873,7 @@ Overfull \hbox (340.9589pt too wide) in paragraph at lines 235--236
 ][][][][][][]
  []
 
-<imagenes/015RunningProject.png, id=337, 1393.205pt x 899.36pt>
+<imagenes/015RunningProject.png, id=342, 1393.205pt x 899.36pt>
 File: imagenes/015RunningProject.png Graphic file (type png)
 <use imagenes/015RunningProject.png>
 Package pdftex.def Info: imagenes/015RunningProject.png  used on input line 249
@@ -888,7 +882,7 @@ Package pdftex.def Info: imagenes/015RunningProject.png  used on input line 249
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/016RunningProject.png, id=338, 1393.205pt x 899.36pt>
+<imagenes/016RunningProject.png, id=343, 1393.205pt x 899.36pt>
 File: imagenes/016RunningProject.png Graphic file (type png)
 <use imagenes/016RunningProject.png>
 Package pdftex.def Info: imagenes/016RunningProject.png  used on input line 258
@@ -953,7 +947,7 @@ Overfull \hbox (86.16832pt too wide) in paragraph at lines 32--34
 [17
 
 ])
-<imagenes/019docker-compose00.png, id=426, 1929.2075pt x 1049.9225pt>
+<imagenes/019docker-compose00.png, id=431, 1929.2075pt x 1049.9225pt>
 File: imagenes/019docker-compose00.png Graphic file (type png)
 <use imagenes/019docker-compose00.png>
 Package pdftex.def Info: imagenes/019docker-compose00.png  used on input line 2
@@ -963,7 +957,7 @@ Package pdftex.def Info: imagenes/019docker-compose00.png  used on input line 2
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/019docker-compose01.png, id=427, 1929.2075pt x 1049.9225pt>
+<imagenes/019docker-compose01.png, id=432, 1929.2075pt x 1049.9225pt>
 File: imagenes/019docker-compose01.png Graphic file (type png)
 <use imagenes/019docker-compose01.png>
 Package pdftex.def Info: imagenes/019docker-compose01.png  used on input line 2
@@ -972,7 +966,7 @@ Package pdftex.def Info: imagenes/019docker-compose01.png  used on input line 2
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/019docker-compose02.png, id=428, 1929.2075pt x 1049.9225pt>
+<imagenes/019docker-compose02.png, id=433, 1929.2075pt x 1049.9225pt>
 File: imagenes/019docker-compose02.png Graphic file (type png)
 <use imagenes/019docker-compose02.png>
 Package pdftex.def Info: imagenes/019docker-compose02.png  used on input line 3
@@ -1042,71 +1036,56 @@ they-are-and-how-to-install-
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+ascii on input line
- 197.
-LaTeX Font Info:    No file OT1ascii.fd. on input line 197.
+ 200.
+LaTeX Font Info:    No file OT1ascii.fd. on input line 200.
 
 LaTeX Font Warning: Font shape `OT1/ascii/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 197.
+(Font)              using `OT1/cmr/m/n' instead on input line 200.
 
 LaTeX Font Info:    Trying to load font information for TS1+ascii on input line
- 197.
-LaTeX Font Info:    No file TS1ascii.fd. on input line 197.
+ 200.
+LaTeX Font Info:    No file TS1ascii.fd. on input line 200.
 
 LaTeX Font Warning: Font shape `TS1/ascii/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textdollar' on input line 197.
+(Font)              for symbol `textdollar' on input line 200.
 
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 197.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 197.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 197.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 197.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 197.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 197.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 199.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 200.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 201.
+            Default family used instead on input line 200.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 205.
+            Default family used instead on input line 200.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 205.
+            Default family used instead on input line 200.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 206.
+            Default family used instead on input line 200.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 206.
+            Default family used instead on input line 200.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 207.
+            Default family used instead on input line 202.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 207.
+            Default family used instead on input line 203.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 204.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 208.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 208.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 209.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 209.
@@ -1124,266 +1103,278 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 211.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 215.
+            Default family used instead on input line 212.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 219.
+            Default family used instead on input line 213.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 213.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 214.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 214.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 218.
 
 
 [29]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 229.
+            Default family used instead on input line 222.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 233.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 234.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 235.
+            Default family used instead on input line 232.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 236.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 236.
+            Default family used instead on input line 237.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 240.
+            Default family used instead on input line 238.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 240.
+            Default family used instead on input line 239.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 251.
+            Default family used instead on input line 239.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 251.
+            Default family used instead on input line 243.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 251.
+            Default family used instead on input line 243.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 251.
+            Default family used instead on input line 254.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 254.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 254.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 254.
 
 
-LaTeX Info: Redefining \. on input line 279.
-LaTeX Info: Redefining \% on input line 279.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
 [30]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 290.
+            Default family used instead on input line 293.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 295.
+            Default family used instead on input line 298.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 307.
+            Default family used instead on input line 310.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 316.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 331.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 332.
+            Default family used instead on input line 319.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Info: Redefining \. on input line 336.
-LaTeX Info: Redefining \% on input line 336.
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
 [31]
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 334.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 335.
 LaTeX Font Info:    Trying to load font information for OML+ascii on input line
- 341.
-LaTeX Font Info:    No file OMLascii.fd. on input line 341.
+ 344.
+LaTeX Font Info:    No file OMLascii.fd. on input line 344.
 
 
 LaTeX Font Warning: Font shape `OML/ascii/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 341.
+(Font)              for symbol `textless' on input line 344.
 
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 341.
+            Default family used instead on input line 344.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 341.
+            Default family used instead on input line 344.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 342.
+            Default family used instead on input line 345.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 348.
+            Default family used instead on input line 351.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 348.
+            Default family used instead on input line 351.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 348.
+            Default family used instead on input line 351.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 348.
+            Default family used instead on input line 351.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 355.
+            Default family used instead on input line 358.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 356.
+            Default family used instead on input line 359.
 LaTeX Font Info:    Trying to load font information for OMS+ascii on input line
- 356.
-LaTeX Font Info:    No file OMSascii.fd. on input line 356.
+ 359.
+LaTeX Font Info:    No file OMSascii.fd. on input line 359.
 
 LaTeX Font Warning: Font shape `OMS/ascii/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 356.
+(Font)              for symbol `textbackslash' on input line 359.
 
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 357.
+            Default family used instead on input line 360.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 364.
+            Default family used instead on input line 367.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 364.
+            Default family used instead on input line 367.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 365.
+            Default family used instead on input line 368.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 365.
+            Default family used instead on input line 368.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 365.
+            Default family used instead on input line 368.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 365.
+            Default family used instead on input line 368.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 372.
+            Default family used instead on input line 375.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 372.
+            Default family used instead on input line 375.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 372.
+            Default family used instead on input line 375.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 372.
+            Default family used instead on input line 375.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 373.
+            Default family used instead on input line 376.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 379.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 384.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 385.
+            Default family used instead on input line 382.
+
+
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+[32]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 387.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 389.
-
-
-LaTeX Info: Redefining \. on input line 390.
-LaTeX Info: Redefining \% on input line 390.
-[32]
+            Default family used instead on input line 388.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 391.
+            Default family used instead on input line 390.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 392.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 399.
+            Default family used instead on input line 394.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 395.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 402.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 407.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 411.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 412.
+            Default family used instead on input line 410.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 413.
+            Default family used instead on input line 414.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 415.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 416.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 423.
+            Default family used instead on input line 419.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 431.
+            Default family used instead on input line 426.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 437.
+            Default family used instead on input line 434.
 
 
-LaTeX Info: Redefining \. on input line 442.
-LaTeX Info: Redefining \% on input line 442.
+LaTeX Info: Redefining \. on input line 439.
+LaTeX Info: Redefining \% on input line 439.
 [33]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 443.
+            Default family used instead on input line 440.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 443.
+            Default family used instead on input line 446.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 443.
+            Default family used instead on input line 446.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 443.
+            Default family used instead on input line 446.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 443.
+            Default family used instead on input line 446.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 445.
+            Default family used instead on input line 446.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 445.
+            Default family used instead on input line 448.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 445.
+            Default family used instead on input line 448.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 445.
+            Default family used instead on input line 448.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 448.
@@ -1392,19 +1383,22 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 451.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 453.
+            Default family used instead on input line 454.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 453.
+            Default family used instead on input line 456.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 456.
 <imagenes/00.png, id=751, 751.80875pt x 371.3875pt>
 File: imagenes/00.png Graphic file (type png)
 <use imagenes/00.png>
-Package pdftex.def Info: imagenes/00.png  used on input line 461.
+Package pdftex.def Info: imagenes/00.png  used on input line 464.
 (pdftex.def)             Requested size: 375.90344pt x 185.69328pt.
 <imagenes/01.png, id=752, 750.805pt x 392.46625pt>
 File: imagenes/01.png Graphic file (type png)
 <use imagenes/01.png>
-Package pdftex.def Info: imagenes/01.png  used on input line 466.
+Package pdftex.def Info: imagenes/01.png  used on input line 469.
 (pdftex.def)             Requested size: 375.40158pt x 196.23264pt.
 
 
@@ -1413,257 +1407,257 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <imagenes/02.png, id=753, 838.13126pt x 418.56375pt>
 File: imagenes/02.png Graphic file (type png)
 <use imagenes/02.png>
-Package pdftex.def Info: imagenes/02.png  used on input line 471.
+Package pdftex.def Info: imagenes/02.png  used on input line 474.
 (pdftex.def)             Requested size: 419.0646pt x 209.28136pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 478.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 482.
+            Default family used instead on input line 481.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 485.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 488.
+            Default family used instead on input line 485.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 488.
+            Default family used instead on input line 485.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 485.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 485.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 485.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 485.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 485.
 
 
-LaTeX Info: Redefining \. on input line 489.
-LaTeX Info: Redefining \% on input line 489.
+LaTeX Info: Redefining \. on input line 488.
+LaTeX Info: Redefining \% on input line 488.
 [34 <./imagenes/00.png>]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 490.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 490.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 490.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 490.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 490.
+            Default family used instead on input line 488.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 491.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
             Default family used instead on input line 491.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 493.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 493.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 493.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 493.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 493.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 494.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 494.
 
 
-LaTeX Info: Redefining \. on input line 501.
-LaTeX Info: Redefining \% on input line 501.
+LaTeX Info: Redefining \. on input line 496.
+LaTeX Info: Redefining \% on input line 496.
 [35 <./imagenes/01.png> <./imagenes/02.png>]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 506.
+            Default family used instead on input line 509.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 508.
+            Default family used instead on input line 511.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 515.
+            Default family used instead on input line 518.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 519.
+            Default family used instead on input line 522.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 520.
+            Default family used instead on input line 523.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 521.
+            Default family used instead on input line 524.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 521.
+            Default family used instead on input line 524.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 528.
+            Default family used instead on input line 531.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 529.
+            Default family used instead on input line 532.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 533.
+            Default family used instead on input line 536.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 533.
+            Default family used instead on input line 536.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 534.
+            Default family used instead on input line 537.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 534.
+            Default family used instead on input line 537.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 534.
+            Default family used instead on input line 537.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 534.
+            Default family used instead on input line 537.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 534.
+            Default family used instead on input line 537.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 534.
+            Default family used instead on input line 537.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 539.
+            Default family used instead on input line 542.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 539.
+            Default family used instead on input line 542.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 539.
+            Default family used instead on input line 542.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 539.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 544.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 545.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 545.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 546.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 546.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 546.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 546.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 546.
-LaTeX Info: Symbol \textminus not provided by
-            font family ascii in TS1 encoding.
-            Default family used instead on input line 546.
+            Default family used instead on input line 542.
 
 
-LaTeX Info: Redefining \. on input line 549.
-LaTeX Info: Redefining \% on input line 549.
+LaTeX Info: Redefining \. on input line 546.
+LaTeX Info: Redefining \% on input line 546.
 [36]
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 554.
-<imagenes/03.png, id=836, 638.385pt x 326.21875pt>
+            Default family used instead on input line 547.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 548.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 548.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 549.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 549.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 549.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 549.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 549.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 549.
+LaTeX Info: Symbol \textminus not provided by
+            font family ascii in TS1 encoding.
+            Default family used instead on input line 557.
+<imagenes/03.png, id=837, 638.385pt x 326.21875pt>
 File: imagenes/03.png Graphic file (type png)
 <use imagenes/03.png>
-Package pdftex.def Info: imagenes/03.png  used on input line 559.
+Package pdftex.def Info: imagenes/03.png  used on input line 562.
 (pdftex.def)             Requested size: 319.19171pt x 163.10896pt.
-<imagenes/04.png, id=837, 402.50375pt x 105.39375pt>
+<imagenes/04.png, id=838, 402.50375pt x 105.39375pt>
 File: imagenes/04.png Graphic file (type png)
 <use imagenes/04.png>
-Package pdftex.def Info: imagenes/04.png  used on input line 566.
+Package pdftex.def Info: imagenes/04.png  used on input line 569.
 (pdftex.def)             Requested size: 201.25137pt x 52.69673pt.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 576.
+            Default family used instead on input line 579.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 576.
+            Default family used instead on input line 579.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 576.
+            Default family used instead on input line 579.
 LaTeX Info: Symbol \textminus not provided by
             font family ascii in TS1 encoding.
-            Default family used instead on input line 576.
-<imagenes/017OBS Studio stream configuration.png, id=838, 988.69376pt x 770.88p
+            Default family used instead on input line 579.
+<imagenes/017OBS Studio stream configuration.png, id=839, 988.69376pt x 770.88p
 t>
 File: imagenes/017OBS Studio stream configuration.png Graphic file (type png)
 <use imagenes/017OBS Studio stream configuration.png>
 Package pdftex.def Info: imagenes/017OBS Studio stream configuration.png  used 
-on input line 581.
+on input line 584.
 (pdftex.def)             Requested size: 338.58632pt x 263.98952pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/018OBS Studio output configuration.png, id=839, 988.69376pt x 770.88p
+<imagenes/018OBS Studio output configuration.png, id=840, 988.69376pt x 770.88p
 t>
 File: imagenes/018OBS Studio output configuration.png Graphic file (type png)
 <use imagenes/018OBS Studio output configuration.png>
 Package pdftex.def Info: imagenes/018OBS Studio output configuration.png  used 
-on input line 590.
+on input line 593.
 (pdftex.def)             Requested size: 338.58632pt x 263.98952pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1693,16 +1687,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CD5574E25515AB99B8AF583AD3A88144;3073.
+(rerunfilecheck)             Checksum: 9A9E9AB53AB72647283A6766453CAA14;3274.
  ) 
 Here is how much of TeX's memory you used:
- 17106 strings out of 470158
- 272004 string characters out of 5484997
- 1345608 words of memory out of 5000000
- 44636 multiletter control sequences out of 15000+600000
+ 17108 strings out of 470158
+ 272046 string characters out of 5484997
+ 1366608 words of memory out of 5000000
+ 44637 multiletter control sequences out of 15000+600000
  640622 words of font info for 66 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 75i,9n,79p,986b,2256s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,986b,2254s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/args/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk> 
 </home/args/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmmi10.pk> </h
 ome/args/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/
@@ -1721,9 +1715,9 @@ pk> </home/args/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488
 .pk> </home/args/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm144
 0.pk> </home/args/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc17
 28.pk></home/args/.miktex/texmfs/install/fonts/type1/public/ascii/ASCII.pfb>
-Output written on main.pdf (57 pages, 3640174 bytes).
+Output written on main.pdf (57 pages, 3641228 bytes).
 PDF statistics:
- 1533 PDF objects out of 1728 (max. 8388607)
- 479 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1536 PDF objects out of 1728 (max. 8388607)
+ 480 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

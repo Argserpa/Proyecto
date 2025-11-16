@@ -16,6 +16,7 @@
 \contentsline {section}{\numberline {B.1}VirtualBox}{29}{section.Alph2.1}%
 \contentsline {subsection}{\numberline {B.1.1}instalación}{29}{subsection.Alph2.1.1}%
 \contentsline {subsection}{\numberline {B.1.2}Guest Additions}{29}{subsection.Alph2.1.2}%
+\contentsline {subsection}{\numberline {B.1.3}VirtualBox Extension Pack}{29}{subsection.Alph2.1.3}%
 \contentsline {section}{\numberline {B.2}Instalación de Ansible and sshpass}{29}{section.Alph2.2}%
 \contentsline {section}{\numberline {B.3}Instalación de de kubeadm}{30}{section.Alph2.3}%
 \contentsline {subsection}{\numberline {B.3.1}instalación kubectl}{30}{subsection.Alph2.3.1}%
